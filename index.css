@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ecf0f1;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #ecf0f1;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li div {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    background-color: #ef4313;
+}
+
+li button:hover {
+    background-color: #2bc4d5;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
